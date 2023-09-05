@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Account
+        {
+            //
+             constructor(accountNo,name,balance,branch)
+            {
+                this.accountNo=accountNo;
+                this.name=name;
+                this.balance=balance;
+                this.branch=branch;
+            }
+
+            displayAccountDetails()
+            {
+                document.write("Account Number :"+ this.accountNo +"<br>");
+                document.write("Account Name :"+ this.name +"<br>");
+                document.write("Account Balance :"+ this.balance +"<br>");
+                document.write("Account Branch :"+ this.branch +"<br>");
+
+            }
+        
+            getBalance()
+            {
+                return this.balance;
+            }
+
+            deposit(amount)
+            {
+                this.balance=this.balance+amount;
+                return this.balance;
+            }
+            withdraw(amount)
+            {
+                this.balance=this.balance-amount;
+                return this.balance;
+            }
+            
+            
+
+        
+        }
+
+        var john= new Account(111,'john',5000,'old str bangalore');
+        var manish= new Account(112,'manish',10000,'old madras');
+         
+        john.displayAccountDetails();
+        document.write("<br><br>");
+
+        document.write("Balance ="+john.getBalance()  +"<br>");
+        document.write("<br><br>");
+
+        document.write("after deposit the balance is "+ john.deposit(2000) +"<br>");
+        document.write("<br><br>");
+
+        document.write("Balance ="+john.getBalance()  +"<br>");
+
+        document.write("<br><br>");
+
+        document.write("after withdraw the balance is "+ john.withdraw(4000) +"<br>");
+        </script>
+</body>
+</html>

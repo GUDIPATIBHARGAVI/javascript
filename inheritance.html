@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charurl="UTF-8">
+    <META NAME="viewport" content="width-device-width, initial-scale=1.0">
+    <title> Document</title>
+</head>
+<body >
+    <script>
+        class RBIBank  
+        {
+              constructor()
+              {
+                   document.write("rbi constructor <br>");
+              }
+  
+              rbiGuideLines()
+              {
+                  document.write(" minimum balance is 5k <br>");
+              }
+        }
+  
+        class Axis extends RBIBank
+        {
+             constructor()
+             {
+                  super();
+                  document.write("axis constructor <br>");
+  
+             }
+  
+             axisPolicy()
+             {
+              document.write("maximum withdraw limit is 2L per day <br>")
+             }
+              
+        }
+  
+          var axis = new Axis();
+            axis.rbiGuideLines();
+            axis.axisPolicy();
+  
+      </script>
+      </body>
+      </html>

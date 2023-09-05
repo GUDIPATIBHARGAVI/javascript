@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        class Student
+        {
+
+            //to  initilize the property of the object
+            constructor(name,dept,year)
+            {
+               this.name=name;
+               this.dept=dept;
+               this.year=year;
+            }
+              
+            //function / method
+            displayDetails()
+            {
+                  document.write("name is "+ this.name +"<br>");
+                  document.write("dept is "+ this.dept +"<br>");
+                  document.write("year is "+ this.year +"<br>");
+            }
+             add(a,b)
+            {
+                return a+b;
+            }
+        }
+
+       
+
+        // creating 3 object for student class
+        var stu1 = new Student("sachin","cse",2);
+        var stu2 = new Student("john","cse",3);
+        var stu3 = new Student("manish","ece",1);
+
+        stu1.displayDetails();
+        stu2.displayDetails();
+        stu3.displayDetails();
+        document.write(stu1.add(2,3));
+        </script>
+
+</body>
+</html>

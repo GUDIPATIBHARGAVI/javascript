@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var products = [
+                  {id:1,name:"hp laptop" ,category:"electronics" , price:87000},
+                  {id:2,name:"pendrive" ,category:"electronics" , price:600},
+                  {id:3,name:"t-shirt" ,category:"cloth" , price:6500},
+                  {id:4,name:"toys" ,category:"toys" , price:9000},
+                  {id:5,name:"mobile" ,category:"electronics" , price:72000},
+                 ];
+
+             document.write("length of products "+ products.length +"<br>");
+
+             for(var i=0;i<products.length ;i++)
+             {
+                document.write(products[i].id +" "+ products[i].name +" "+ products[i].category +" "+ products[i].price +"<br><br>");
+             }
+             document.write("<hr>");
+             document.write("<h2>display only electronics </h2> <br>")
+             for(var i=0;i<products.length ;i++)
+             {
+                   if(products[i].category==="electronics")
+                   {
+                    document.write(products[i].id +" "+ products[i].name +" "+ products[i].category +" "+ products[i].price +"<br><br>");
+
+                   }
+             }
+
+             document.write("<hr>");
+             document.write(" <h2> display price greater than 20000 </h2> <br>")
+             for(var i=0;i<products.length ;i++)
+             {
+                   if(products[i].price >=20000)
+                   {
+                    document.write(products[i].id +" "+ products[i].name +" "+ products[i].category +" "+ products[i].price +"<br><br>");
+                   }
+             }
+    </script>
+</body>
+</html>

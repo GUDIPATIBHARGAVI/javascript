@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale="1.0>
+    <title> Document</title>
+</head>
+<body>
+    <script>
+    function checkEligiblity(age)
+       {
+             if(age>=18)
+             {
+                return "you are eligible to vote";
+             }
+                
+              return "not eligible to vote";
+       }
+
+
+       function getData()
+       {
+         
+         // convert to number and store in age variable.
+         var age= Number(document.getElementById("age").value);
+
+        var result =  checkEligiblity(age);
+
+         var p = document.getElementById("p");
+         p.innerHTML=result;
+         p.style.backgroundColor='yellow';
+         p.style.fontSize='40px';
+       }
+
+       
+    </script>
+
+    <input type="text" name="age" id="age">
+
+    <button onclick="getData()">check eligiblity </button>
+
+    <p id="p"></p>
+
+
+</body>
+</html>

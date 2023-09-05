@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<body>
+    <script>
+        function Employee(id,name)
+        {
+            this.id=id;
+            this.name=name;
+        }
+        Employee.prototype.display=function(){
+            console.log("id="+this.id);
+            console.log("name="+this.name);
+        }
+        var emp=new Employee(1,'sachin');
+        emp.display();
+    </script>
+    
+</body>
+</html>

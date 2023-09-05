@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var marks=[8,9];
+       
+        function addElement()
+        {
+            var value=document.getElementById("element").value;
+            marks.push(value);
+        }
+      
+        function viewelement(){
+            for(var i=0;i<marks.length;i++)
+        {
+           
+            console.log(marks[i]);
+        }
+    }
+    </script>
+    <input type="text" name="element " id="element">
+    <button onclick="addElement()">Add element</button>
+    <button onclick="viewelement()">view the element</button> 
+    
+</body>
+</html>

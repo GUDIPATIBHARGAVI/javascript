@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charurl="UTF-8">
+    <META NAME="viewport" content="width-device-width, initial-scale=1.0">
+    <title> Document</title>
+</head>
+<body >
+    <script>
+        //using literal
+        var car1={modelNo:2019,price:43000,color:'red'}
+        document.write(car1.modelNo+" "+car1.price+" "+car1.color+"<br>");
+
+        //using new keyword
+        var car2=new Object();
+        car2.modelNo=1;
+        car2.price=60000;
+        car2.color="green";
+        document.write(car1.modelNo+" "+car1.price+" "+car1.color+"<br>");
+        document.write(car2.modelNo+" "+car2.price+" "+car2.color+"<br>");
+
+        //by using constructor
+        function car(modelNo,price,color)
+        {
+            this.modelNo=modelNo;
+            this.price=price;
+            this.color=color;
+        }
+        var mycar=new car(2001,43000,'yellow')
+        document.write(mycar.modelNo+" "+mycar.price+" "+mycar.color+"<br>")
+    </script>
+</body>
+
+</html>

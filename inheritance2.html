@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charurl="UTF-8">
+    <META NAME="viewport" content="width-device-width, initial-scale=1.0">
+    <title> Document</title>
+</head>
+<body>
+    <script>
+        class Person
+        {
+             constructor(name,age)
+             {
+                this.name="sachin";
+                this.age=23;
+              }
+
+              displayPerson()
+              {
+                document.write("this is person info <br>")
+              }
+        }
+
+        class Employee  extends Person
+        {
+              constructor(salary)
+              {
+                super();
+                this.salary=56000;
+              }
+
+             displayEmployeeInfo()
+            {
+               
+                document.write("name is "+ this.name +" age "+ this.age +" salary "+ this.salary +"<br>")
+            }
+        }
+
+       
+
+            var employee = new Employee();
+          
+            employee.displayEmployeeInfo();
+
+
+    </script>
+        </body>
+        </html>

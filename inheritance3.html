@@ -1,0 +1,53 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Document</title>
+        </head>
+<body>
+    <script>
+    class Person
+        {
+             constructor(name,age)
+             {
+                 this.name=name;
+                 this.age=age;
+                  
+             }
+
+              displayPerson()
+              {
+
+                document.write("name :" + this.name +"<br>");
+                document.write("age :"+ this.age +"<br>");
+              }
+        }
+
+        class Employee  extends Person
+        {
+              constructor(name,age,salary)
+              {
+                super(name,age);
+                
+                this.salary=salary;
+              }
+
+             displayEmployeeInfo()
+            {
+            
+               document.write("Salary is "+ this.salary +"<br>");
+            }
+        }
+
+       
+
+            var employee = new Employee('sachin',34,67000);
+          
+             employee.displayPerson();
+             employee.displayEmployeeInfo();
+             </script>
+
+
+</body>
+</html>
