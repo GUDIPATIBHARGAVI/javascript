@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale="1.0>
+    <title> Document</title>
+</head>
+<body>
+    <input type="text" id="txtinput"> 
+<button onclick="countwords()">  
+    Check Count</button>  
+<script>  
+    function countwords() {  
+        var val = document.getElementById("txtinput").value;  
+        var words = 0, chars = 0;  
+        if (val != " ") {  
+            words = val.replace(/\s+/g, ' ').split(' ').length; // Count words  
+            chars = val.length;                                 // Count characters  
+        }  
+        document.write(chars + " Characters & " + words + " Words");  
+    }  
+</script>
+</body>
+</html>
