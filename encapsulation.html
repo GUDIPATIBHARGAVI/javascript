@@ -1,44 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charurl="UTF-8">
+    <META NAME="viewport" content="width-device-width, initial-scale=1.0">
+    <title> Document</title>
 </head>
-<body>
+<body >
     <script>
-        class Account
-        {
+        class accountName{
             constructor()
             {
-                var accountNo;
-                var accountName;
+
             }
-            setAccountNo(accountNo)
-            {
-                this.accountNo=accountNo;
-            }
-            setAccountName(accountName)
-            {
-                this.accountName=accountName;
-            }
-            getAccountNo()
-            {
-                return this.accountNo;
-            }
-            getAccountName()
-            {
-                return this.accountName;
-            }
+        
+        setAccountNo(accountNo)
+        {
+            this.accountNo=accountNo;
         }
-        var account1=new Account()
-        account1.setAccountNo(1);
-        account1.setAccountName("bharu")
+        setAccountName(accountName)
+        {
+            this.accountName=accountName
+        }
+        getAccountNo()
+        {
+            return this.accountNo;
+        }
 
-        document.write("account number is"+account1.getAccountName());
-        document.write("account name is"+account1.getAccountNo());
+        getAccountName()
+        {
+            return this.accountName;
+        }
+    }
+    var account1=new Account();
+    account1.setAccountNo(100);
 
-    </script>
-    
-</body>
-</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<head>
+    <title> promise </title>
+</head>
+<body>
+    <script>
+        let complete=true;
+let prom=new Promise(function(resolve,reject)
+{
+    if(complete)
+    {
+        resolve(" success ");
+    }
+    else{
+        reject(" reject promise failed ");
+    }
+
+});
+console.log(prom);
+let complet=false;
+let pro=new Promise(function(resolve,reject)
+{
+    if(complet)
+    {
+        resolve(" success ");
+    }
+    else{
+        reject(" reject promise failed ");
+    }
+
+});
+console.log(pro);
+    </script>
+</body>
+</html>

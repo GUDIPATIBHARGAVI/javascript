@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+  <title>promise</title>
+</head>
+<body>
+  <script>
+    let complete = true;
+    let prom = new Promise(function (resolve, reject) {
+      if (complete) {
+        resolve(" success ");
+      } else {
+        reject(" reject promise failed ");
+      }
+    });
+    console.log(prom);
+  </script>
+</body>

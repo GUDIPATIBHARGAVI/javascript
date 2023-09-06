@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charurl="UTF-8">
+    <META NAME="viewport" content="width-device-width, initial-scale=1.0">
+    <title> Document</title>
+</head>
+<body id="b">
+    <script>
+        function createPara()
+        {
+            //CREATE ELEMENT
+            var p=document.createElement("p");
+            p.innerHTML="welcome to js";
+
+            var body=document.getElementById('b');
+            body.appendChild(p);
+
+            var divcontainer=document.getElementById("div1");
+            divcontainer.appendChild(p);
+            divcontainer.appendChild(myheading);
+
+
+        }
+        
+    </script>
+    <button onclick="createPara()">create paragraph</button>
+    <h1> this is h1</h1>
+    <h1>Add Para Demo</h1>
+
+
+<div id="div1"  style="border: 2px solid;">
+   <h1>this is div</h1>
+   <p>this is para</p>
+   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ratione officia incidunt illum necessitatibus corporis totam ab dicta possimus facere.</p>
+</div>
+
+<br>
+
+<div id="div2" style="border: 2px solid;">
+    <h1>this is div</h1>
+    <p>this is para</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ratione officia incidunt illum necessitatibus corporis totam ab dicta possimus facere.</p>
+ </div>
+
+ <button onclick="createPara()">create parapraph</button>
+</body>
+</html>

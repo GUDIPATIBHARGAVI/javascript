@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charurl="UTF-8">
+    <META NAME="viewport" content="width-device-width, initial-scale=1.0">
+    <title> Document</title>
+</head>
+<body>
+    <script>
+        class person{
+            constructor(accno,name,blnc)
+            {
+            this.accno=accno;
+            this.name=name;
+            this.blnc=blnc;
+            }
+            displaydetails()
+            {
+                document.write("account number"+this.accno+"<br>");
+                document.write("account name"+this.name+"<br>");
+                document.write("account blnc"+this.blnc+"<br>");
+            }
+getbalance()
+{
+    return this.blnc;
+}
+deposit(person)
+{
+    this.blnc=this.blnc+person;
+    return this.blnc;
+}
+withdraw(person)
+{
+    this.blnc=this.blnc-person;
+    return this.blnc;
+}
+
+
+        }
+
+
+
+   var john=new person(12,"john,",100000);
+   var manish=new person(112,"manish,",1020000);
+   john.displaydetails();
+   manish.displaydetails();
+   document.write(john.getbalance()+"<br>");
+   document.write("after deposit amount is"+john.deposit(5000)+"<br>");
+   document.write(john.getbalance());
+   document.write("after withdraw"+john.withdraw(70000));
+    </script>
+</body>
+</html>

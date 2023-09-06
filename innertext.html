@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charurl="UTF-8">
+    <META NAME="viewport" content="width-device-width, initial-scale=1.0">
+    <title> Document</title>
+</head>
+<body>
+    <script>
+        function validateUsername()
+        {
+            var username=document.getElementById('username').value;
+            var nameLength=username.length;
+            if(nameLength>5 & nameLength<8)
+            {
+                document.getElementById('p1').innerHTML="length is greater";
+            }
+            if(nameLength>=8)
+            {
+                document.getElementById('p2').innerHTML="super"
+            }
+        }
+
+    </script>
+    <input type="text" name="username" id="username" onkeypress="validateUsername()">
+    <p id="p1">weak</p>
+    <p id="p2"></p>
+</body>
+
+</html>

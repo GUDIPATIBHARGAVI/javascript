@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charurl="UTF-8">
+    <META NAME="viewport" content="width-device-width, initial-scale=1.0">
+    <title> Document</title>
+    <script src="localscope.js"></script>
+</head>
+<body>
+    <script>
+        class student{
+            constructor(name,dept,year)//declare property inside the constructor
+            {
+                this.name="bharu";
+                this.dept="cse";
+                this.year=2023;
+            }
+            displayDetails()
+            {
+                document.write("name is"+this.name+"<br>");
+                document.write("dept is"+ this.dept+"<br>");
+                document.write("year is"+this.year+"<br>");
+            }
+
+            add(a,b)
+            {
+                return a+b;
+            }
+        }
+        var student1=new student();
+        student1.displayDetails();
+        document.write(student1.add(3,4));
+        
+
+    </script>
+    <h1> i am heading </h1>
+</body>

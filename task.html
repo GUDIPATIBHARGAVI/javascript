@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charurl="UTF-8">
+    <META NAME="viewport" content="width-device-width, initial-scale=1.0">
+    <title> Document</title>
+</head>
+<body>
+    <script>
+        var employees = [
+            { id: 1, name: "sachin", salary: 56000, dept: "hr", age: 32 },
+            { id: 2, name: "ravi", salary: 67000, dept: "dev", age: 29 },
+            { id: 3, name: "manoj", salary: 92000, dept: "dev", age: 37 },
+            { id: 4, name: "sorab", salary: 40000, dept: "hr", age: 26 },
+            { id: 5, name: "manish", salary: 50000, dept: "tester", age: 38 },
+            { id: 6, name: "kumar", salary: 68000, dept: "dev ", age: 34 },
+
+
+        ];
+
+        var hrCount=0;
+        var developercOUNT=0;
+
+        for(var i=0;i<employees.length;i++)
+        {
+            if(employees[i].dept==="dev")
+            {
+                ++developercOUNT;
+            }
+            else if(employees[i].dept==="hr")
+            {
+                ++hrCount;
+            }
+        }
+        document.write("hr count:"+hrCount+"developer count:"+developercOUNT);
+        
+    </script>
+</body>

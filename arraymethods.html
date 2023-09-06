@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charurl="UTF-8">
+    <META NAME="viewport" content="width-device-width, initial-scale=1.0">
+    <title> Document</title>
+</head>
+<body >
+    <script>
+        var courses=["html","css","java","react"];
+        document.write("length of array:"+courses.length+"<br>")
+        document.write(courses[0]+"<br>");
+        document.write(courses[1]+"<br>");
+
+        for(i=0;i<courses.length;i++)
+        {
+            document.write(courses[i]+"&nbsp")
+        }
+        document.write("<br>")
+        document.write("<br>")
+        
+        courses.push("angular");
+        courses.push("python");
+
+        document.write("length of aray after push:"+courses.length+"<br>");
+
+        for(var i=0;i<courses.length;i++)
+        {
+            document.write(courses[i]+"&nbsp&nbsp")
+
+        }
+        document.write("<br>");
+        document.write("<br>");
+
+        courses.pop();
+        for(var i=0;i<courses.length;i++)
+        {
+            document.write(courses[i]+"&nbsp&nbsp")
+        }
+        document.write("<br>");
+        courses.pop("html");
+        for(var i=0;i<courses.length;i++)
+        {
+            document.write(courses[i]+"&nbsp&nbsp")
+        }
+        
+
+
+    </script>
+</body>
+
+</html>

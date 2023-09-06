@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charurl="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title> Document</title>
+</head>
+<body >
+    <script>
+        //using literal
+        var stu={id:1234,dep:'cse'}
+        document.write(stu.id+" "+stu.dep+"<br>");
+
+        //using new keyword
+        var stu2=new Object();
+        stu2.id=123;
+        stu.dep='css';
+        document.write(stu.id+" "+stu.dep+"<br>");
+        
+
+        //by using constructor
+        function stu3(id,dep)
+        {
+         
+            this.id=id;
+            this.dep=dep;
+        }
+        var student=new stu3(1233,'cs')
+        document.write(student.id+" "+student.dep+"<br>")
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charurl="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title> Document</title>
+    
+</head>
+<body>
+    <div id="div1">
+        <p class="para">this is p1</p>
+        <p class="para">this is p2</p>
+        <p >this is p3</p>
+      <h1 class="para"> this is h1</h1>
+  
+  </div>
+  
+  <div id="div2">
+      <p >this is p1</p>
+      <p >this is p2</p>
+      <p class="para">this is p3</p>
+    <h1 class="para"> this is h1</h1>
+  
+  </div>
+  
+  <script>
+      var parentId= document.getElementById("div2");
+  
+      var elements =  parentId.getElementsByClassName("para");
+       console.log(elements);
+  
+       var first = parentId.getElementsByClassName("para")[0];
+       console.log(first);
+  
+  
+  
+    
+   </script>
+   
+</body>
+
+</html>
